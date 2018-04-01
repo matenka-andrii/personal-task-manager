@@ -7,4 +7,4 @@
 + `yarn` or `npm i`
 + `yarn start` or `npm start`
 
-Also you have to add your own token to this file \react-intensive-homework\src\containers\App\index.js If you don't have it, please contact me matenka.andrii@gmail.com
+Also you have to add your own token to this file \personal-task-manager\src\containers\App\index.js If you don't have it, please contact me matenka.andrii@gmail.com
