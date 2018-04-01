@@ -1,0 +1,76 @@
+@import '../../theme/palette';
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6.1rem;
+    margin: 1.3rem 0 0;
+    margin-bottom: 1.3rem;
+    padding: 1.8rem;
+    letter-spacing: 0.1rem;
+    background-color: $paletteColor2;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.6rem $rgbaColor1;
+    font-size: 2rem;
+    font-weight: 400;
+
+    & div span {
+        cursor: pointer;
+    }
+
+    & > div:first-child {
+        display: flex;
+        position: relative;
+        width: 63rem;
+        height: 4.2rem;
+
+        & span {
+            display: flex;
+            align-items: center;
+            margin-right: 1.9rem;
+        }
+
+        & input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 4.2rem;
+            border: 0;
+            padding: 0;
+        }
+
+        & p {
+            height: 4.2rem;
+            line-height: 4.2rem;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: sans-serif;
+        }
+    }
+
+    & > div:last-child {
+        & span {
+            margin-left: 1.7rem;
+            path {
+                transition: fill .3s ease;
+            }
+        }
+    }
+}
+
+.completed {
+    background-color: $paletteColor8;
+    color: $paletteColor9;
+
+    & > div:first-child {
+        & input {
+            background-color: $paletteColor8;
+        }
+    }
+}
+
+.editing {
+    border: 1px solid #3B8EF3;
+}
